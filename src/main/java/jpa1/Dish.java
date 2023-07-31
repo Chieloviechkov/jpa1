@@ -23,7 +23,6 @@ public class Dish {
     @Column(name = "discount_available")
     private boolean discountAvailable;
 
-    // Конструктор з параметрами
     public Dish(String dishName, double price, double weight, boolean discountAvailable) {
         this.dishName = dishName;
         this.price = price;
@@ -31,11 +30,9 @@ public class Dish {
         this.discountAvailable = discountAvailable;
     }
 
-    // Пустий конструктор (обов'язковий для Hibernate)
     public Dish() {
     }
 
-    // Геттери і сеттери для полів класу
 
     public Long getId() {
         return id;
@@ -77,7 +74,6 @@ public class Dish {
         this.discountAvailable = discountAvailable;
     }
 
-    // Перевизначені методи equals, hashCode і toString
 
     @Override
     public boolean equals(Object o) {
